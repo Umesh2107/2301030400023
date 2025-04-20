@@ -1,0 +1,253 @@
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.feature {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+    background: #333;
+}
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #1e1e1e;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li .btn {
+    background: #ff4d4d;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+nav ul li .btn:hover {
+    background: #ff6666;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: url('music-bg.jpg') no-repeat center center/cover;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.primary {
+    background: #ff4d4d;
+    color: white;
+}
+
+.secondary {
+    background: #333;
+    color: white;
+}
+
+.primary:hover {
+    background: #ff6666;
+}
+
+.secondary:hover {
+    background: #444;
+}
+/* How It Works Section */
+.how-it-works {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.how-it-works h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.step {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 1rem;
+}
+
+.step:hover {
+    transform: scale(1.05);
+    background: #333;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .steps-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+/* Featured Playlists Section */
+.featured-playlists {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.featured-playlists h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.playlist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.playlist {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.playlist img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.playlist h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.playlist p {
+    font-size: 1rem;
+}
+
+.playlist:hover {
+    transform: scale(1.05);
+    background: #333;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .playlist-container {
+        justify-content: space-between;
+    }
+}
